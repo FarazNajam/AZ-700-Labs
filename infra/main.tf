@@ -13,7 +13,7 @@ terraform {
   backend "azurerm" {
     resource_group_name  = "rg-terraform-state-file-prod-01"
     storage_account_name = "terraformstatefileprod02"
-    container_name       = "tfstate_AZ_700_labs"
+    container_name       = "tfstate-az-700-labs"
     key                  = "dev.tfstate"
 
     # Use Entra ID + OIDC from GitHub
